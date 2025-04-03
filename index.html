@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Location d'icônes</title>
+    <title>Location d'icônes - Licornes Rent</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -53,12 +53,45 @@
         .btn:hover {
             background: #005582;
         }
+        .nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+        .nav a {
+            text-decoration: none;
+            color: #0073b1;
+            font-weight: bold;
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>📌 Location d'icônes</h1>
+        <nav class="nav">
+            <a href="#about">Qui sommes-nous?</a>
+            <a href="#services">Nos services</a>
+            <a href="#contact">Nous contacter</a>
+        </nav>
+        
+        <h1>📌 Location d'icônes - Licornes Rent</h1>
         <p>Choisissez des icônes de qualité pour vos projets !</p>
+        
+        <div id="about">
+            <h2>Qui sommes-nous ?</h2>
+            <p>Licornes Rent est une entreprise spécialisée dans la location d'icônes pour tous vos événements et besoins graphiques.</p>
+        </div>
+        
+        <div id="services">
+            <h2>Nos services</h2>
+            <p>Nous proposons la location d'icônes par type d'événements :</p>
+            <ul>
+                <li>🎉 Mariage</li>
+                <li>🎂 Anniversaire</li>
+                <li>👶 Baptême</li>
+            </ul>
+        </div>
+        
         <div class="icons">
             <div class="icon-card">
                 <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="Icône GitHub">
@@ -75,6 +108,20 @@
                 <p>Icône Twitter</p>
                 <a href="#" class="btn">Louer</a>
             </div>
+        </div>
+        
+        <div id="contact">
+            <h2>Nous contacter</h2>
+            <p>Contactez-nous pour plus d’informations :</p>
+            <form>
+                <label for="name">Nom :</label><br>
+                <input type="text" id="name" name="name" required><br>
+                <label for="email">Email :</label><br>
+                <input type="email" id="email" name="email" required><br>
+                <label for="message">Message :</label><br>
+                <textarea id="message" name="message" required></textarea><br>
+                <button type="submit" class="btn">Envoyer</button>
+            </form>
         </div>
     </div>
 </body>
